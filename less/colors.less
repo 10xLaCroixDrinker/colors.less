@@ -1,5 +1,12 @@
 @baseColor: #FD00FF;
 
+// Shades
+  @shade1: lighten(@baseColor, 20%);
+  @shade2: lighten(@baseColor, 10%);
+  @shade3: @baseColor;
+  @shade4: darken(@baseColor, 10%);
+  @shade5: darken(@baseColor, 20%);
+    
 // Analgous
   @distance1: 10; // Degrees between each analgous color
   @analgous1: spin(@baseColor, (@distance1 * 2));
@@ -7,6 +14,16 @@
   @analgous3: @baseColor;
   @analgous4: spin(@baseColor, (@distance1 * -1));
   @analgous5: spin(@baseColor, (@distance1 * -2));
+
+// Complementary
+  @complementary1: @baseColor;
+  @complementary2: spin(@baseColor, 180);
+
+// Split Complementary
+  @distance3: 80; // Degrees between the two complementary colors
+  @splitComp1: spin(@baseColor, ((360 - @distance3) / 2));
+  @splitComp2: @baseColor;
+  @splitComp3: spin(@baseColor, (((360 - @distance3) / 2) * -1));
 
 // Clash
   @angle: 45; // Angle formed at base of isosceles triangle
@@ -26,23 +43,6 @@
   @tetrad3: spin(@baseColor, 180);
   @tetrad4: spin(@baseColor, (180 + @distance2));
   
-// Split Complementary
-  @distance3: 80; // Degrees between the two complementary colors
-  @splitComp1: spin(@baseColor, ((360 - @distance3) / 2));
-  @splitComp2: @baseColor;
-  @splitComp3: spin(@baseColor, (((360 - @distance3) / 2) * -1));
-  
-// Complementary
-  @complementary1: @baseColor;
-  @complementary2: spin(@baseColor, 180);
-
-// Shades
-  @shade1: lighten(@baseColor, 20%);
-  @shade2: lighten(@baseColor, 10%);
-  @shade3: @baseColor;
-  @shade4: darken(@baseColor, 10%);
-  @shade5: darken(@baseColor, 20%);
-    
 // Five tone
   @distance4: 20; // Degrees between the 4 analgous colors
   @5tone1: spin(@baseColor, (180 - (@distance4 * 1.5)));

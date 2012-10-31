@@ -6,12 +6,12 @@
 
 Create the following color schemes
 
+* Shades
 * Analgous
+* Complementary
+* Split Complementary
 * Clash
 * Triadic
 * Tetradic
-* Split Complementary
-* Complementary
-* Shades
 * Five tone
 * Six tone
