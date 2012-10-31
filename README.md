@@ -8,7 +8,7 @@ Create the following color schemes
 
 * Analgous
 * Clash
-* Triadic (Square)
+* Triadic
 * Tetradic
 * Split Complementary
 * Complementary
