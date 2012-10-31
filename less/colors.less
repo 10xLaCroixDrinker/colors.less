@@ -18,10 +18,10 @@
   @triad3: spin(@baseColor, -120);
 
 // Tetradic
-  //@tetrad1: @baseColor;
-  //@tetrad2
-  //@tetrad3
-  //@tetrad4
+  @tetrad1: @baseColor;
+  @tetrad2: spin(@baseColor, 90);
+  @tetrad3: spin(@baseColor, 180);
+  @tetrad4: spin(@baseColor, -90);
   
 // Split Complementary
   //@splitComp1: @baseColor;
@@ -39,11 +39,11 @@
   //@compound5
 
 // Shades
-  //@shade1
-  //@shade2
-  //@shade3: @baseColor;
-  //@shade4
-  //@shade5
+  @shade1: lighten(@baseColor, 20%);
+  @shade2: lighten(@baseColor, 10%);
+  @shade3: @baseColor;
+  @shade4: darken(@baseColor, 10%);
+  @shade5: darken(@baseColor, 20%);
   
 // Four tone
   //@4tone1: @baseColor;
