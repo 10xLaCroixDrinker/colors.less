@@ -54,26 +54,38 @@
 .scheme.triadic .three {
   background-color: #00fffd;
 }
-.scheme.tetradic .one {
+.scheme.tetradic-sq .one {
   background-color: #fd00ff;
 }
-.scheme.tetradic .two {
+.scheme.tetradic-sq .two {
   background-color: #ff7e00;
 }
-.scheme.tetradic .three {
+.scheme.tetradic-sq .three {
   background-color: #02ff00;
 }
-.scheme.tetradic .four {
+.scheme.tetradic-sq .four {
   background-color: #0081ff;
 }
+.scheme.tetradic-rect .one {
+  background-color: #fd00ff;
+}
+.scheme.tetradic-rect .two {
+  background-color: #ff0081;
+}
+.scheme.tetradic-rect .three {
+  background-color: #02ff00;
+}
+.scheme.tetradic-rect .four {
+  background-color: #00ff7e;
+}
 .scheme.split-comp .one {
-  background-color: #cccccc;
+  background-color: #acff00;
 }
 .scheme.split-comp .two {
-  background-color: #cccccc;
+  background-color: #fd00ff;
 }
 .scheme.split-comp .three {
-  background-color: #cccccc;
+  background-color: #00ffa8;
 }
 .scheme.complementary .one {
   background-color: #fd00ff;
@@ -110,18 +122,6 @@
 }
 .scheme.shades .five {
   background-color: #980099;
-}
-.scheme.four-tone .one {
-  background-color: #cccccc;
-}
-.scheme.four-tone .two {
-  background-color: #cccccc;
-}
-.scheme.four-tone .three {
-  background-color: #cccccc;
-}
-.scheme.four-tone .four {
-  background-color: #cccccc;
 }
 .scheme.five-tone .one {
   background-color: #cccccc;

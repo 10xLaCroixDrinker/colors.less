@@ -9,7 +9,7 @@ Create the following color schemes
 * Analgous
 * Clash (45°)
 * Triadic
-* Tetradic
+* Tetradic (Square)
 * Split Complementary
 * Complementary
 * Compound

@@ -2,11 +2,12 @@
 @placeholder: #ccc;
 
 // Analgous
-  @analgous1: spin(@baseColor, 20);
-  @analgous2: spin(@baseColor, 10);
+  @distance1: 10; // Degrees between each analgous color
+  @analgous1: spin(@baseColor, (@distance1 * 2));
+  @analgous2: spin(@baseColor, @distance1);
   @analgous3: @baseColor;
-  @analgous4: spin(@baseColor, -10);
-  @analgous5: spin(@baseColor, -20);
+  @analgous4: spin(@baseColor, (@distance1 * -1));
+  @analgous5: spin(@baseColor, (@distance1 * -2));
 
 // Clash (45°)
   @clash1: @placeholder;// @baseColor;
@@ -18,16 +19,24 @@
   @triad2: spin(@baseColor, 120);
   @triad3: spin(@baseColor, -120);
 
-// Tetradic
-  @tetrad1: @baseColor;
-  @tetrad2: spin(@baseColor, 90);
-  @tetrad3: spin(@baseColor, 180);
-  @tetrad4: spin(@baseColor, -90);
+// Tetradic (Square)
+  @tetradSq1: @baseColor;
+  @tetradSq2: spin(@baseColor, 90);
+  @tetradSq3: spin(@baseColor, 180);
+  @tetradSq4: spin(@baseColor, -90);
+  
+// Tetradic (Rectangle)
+  @distance2: 30; // Degrees between two closest colors
+  @tetradRect1: @baseColor;
+  @tetradRect2: spin(@baseColor, @distance2);
+  @tetradRect3: spin(@baseColor, 180);
+  @tetradRect4: spin(@baseColor, (180 + @distance2));
   
 // Split Complementary
-  @splitComp1: @placeholder;// @baseColor;
-  @splitComp2: @placeholder;
-  @splitComp3: @placeholder;
+  @distance3: 80; // Degrees between the two complementary colors
+  @splitComp1: spin(@baseColor, ((360 - @distance3) / 2));
+  @splitComp2: @baseColor;
+  @splitComp3: spin(@baseColor, (((360 - @distance3) / 2) * -1));
   
 // Complementary
   @complementary1: @baseColor;
@@ -46,14 +55,9 @@
   @shade3: @baseColor;
   @shade4: darken(@baseColor, 10%);
   @shade5: darken(@baseColor, 20%);
-  
-// Four tone
-  @4tone1: @placeholder;// @baseColor;
-  @4tone2: @placeholder;
-  @4tone3: @placeholder;
-  @4tone4: @placeholder;
-  
+    
 // Five tone
+  @distance4: 15; // Degrees between the 4 analgous colors
   @5tone1: @placeholder;// @baseColor;
   @5tone2: @placeholder;
   @5tone3: @placeholder;
@@ -61,6 +65,7 @@
   @5tone5: @placeholder;
   
 // Six tone
+  @distance5: 10; // Distance between the colors of each analgous pair
   @6tone1: @placeholder;// @baseColor;
   @6tone2: @placeholder;
   @6tone3: @placeholder;
