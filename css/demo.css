@@ -1,14 +1,158 @@
-body {
+.scheme {
+  height: 100px;
   width: 100%;
 }
-.color {
+.scheme .color {
   float: left;
-  height: 500px;
+  height: 100px;
+}
+.scheme.two .color {
+  width: 50%;
+}
+.scheme.three .color {
+  width: 33.333%;
+}
+.scheme.four .color {
+  width: 25%;
+}
+.scheme.five .color {
   width: 20%;
 }
-.color.two {
-  background: #02ff00;
+.scheme.six .color {
+  width: 16.667%;
 }
-.color.base {
-  background: #fd00ff;
+.scheme.analgous .one {
+  background-color: #ff00ac;
+}
+.scheme.analgous .two {
+  background-color: #ff00d6;
+}
+.scheme.analgous .three {
+  background-color: #fd00ff;
+}
+.scheme.analgous .four {
+  background-color: #d200ff;
+}
+.scheme.analgous .five {
+  background-color: #a800ff;
+}
+.scheme.clash .one {
+  background-color: #cccccc;
+}
+.scheme.clash .two {
+  background-color: #cccccc;
+}
+.scheme.clash .three {
+  background-color: #cccccc;
+}
+.scheme.triadic .one {
+  background-color: #fd00ff;
+}
+.scheme.triadic .two {
+  background-color: #fffd00;
+}
+.scheme.triadic .three {
+  background-color: #00fffd;
+}
+.scheme.tetradic .one {
+  background-color: #fd00ff;
+}
+.scheme.tetradic .two {
+  background-color: #ff7e00;
+}
+.scheme.tetradic .three {
+  background-color: #02ff00;
+}
+.scheme.tetradic .four {
+  background-color: #0081ff;
+}
+.scheme.split-comp .one {
+  background-color: #cccccc;
+}
+.scheme.split-comp .two {
+  background-color: #cccccc;
+}
+.scheme.split-comp .three {
+  background-color: #cccccc;
+}
+.scheme.complementary .one {
+  background-color: #fd00ff;
+}
+.scheme.complementary .two {
+  background-color: #02ff00;
+}
+.scheme.compound .one {
+  background-color: #cccccc;
+}
+.scheme.compound .two {
+  background-color: #cccccc;
+}
+.scheme.compound .three {
+  background-color: #cccccc;
+}
+.scheme.compound .four {
+  background-color: #cccccc;
+}
+.scheme.compound .five {
+  background-color: #cccccc;
+}
+.scheme.shades .one {
+  background-color: #fe66ff;
+}
+.scheme.shades .two {
+  background-color: #fd33ff;
+}
+.scheme.shades .three {
+  background-color: #fd00ff;
+}
+.scheme.shades .four {
+  background-color: #ca00cc;
+}
+.scheme.shades .five {
+  background-color: #980099;
+}
+.scheme.four-tone .one {
+  background-color: #cccccc;
+}
+.scheme.four-tone .two {
+  background-color: #cccccc;
+}
+.scheme.four-tone .three {
+  background-color: #cccccc;
+}
+.scheme.four-tone .four {
+  background-color: #cccccc;
+}
+.scheme.five-tone .one {
+  background-color: #cccccc;
+}
+.scheme.five-tone .two {
+  background-color: #cccccc;
+}
+.scheme.five-tone .three {
+  background-color: #cccccc;
+}
+.scheme.five-tone .four {
+  background-color: #cccccc;
+}
+.scheme.five-tone .five {
+  background-color: #cccccc;
+}
+.scheme.six-tone .one {
+  background-color: #cccccc;
+}
+.scheme.six-tone .two {
+  background-color: #cccccc;
+}
+.scheme.six-tone .three {
+  background-color: #cccccc;
+}
+.scheme.six-tone .four {
+  background-color: #cccccc;
+}
+.scheme.six-tone .five {
+  background-color: #cccccc;
+}
+.scheme.six-tone .six {
+  background-color: #cccccc;
 }
