@@ -57,7 +57,7 @@
   @shade5: darken(@baseColor, 20%);
     
 // Five tone
-  @distance4: 15; // Degrees between the 4 analgous colors
+  @distance4: 20; // Degrees between the 4 analgous colors
   @5tone1: spin(@baseColor, (180 - (@distance4 * 1.5)));
   @5tone2: spin(@baseColor, (180 - (@distance4 * 0.5)));
   @5tone3: @baseColor;
@@ -66,9 +66,12 @@
   
 // Six tone
   @distance5: 20; // Distance between the colors of each analgous pair
-  @6tone1: @placeholder;// @baseColor;
-  @6tone2: @placeholder;
-  @6tone3: @placeholder;
-  @6tone4: @placeholder;
-  @6tone5: @placeholder;
-  @6tone6: @placeholder;
+  // Pair 1
+  @6tone1: @baseColor;
+  @6tone2: spin(@baseColor, @distance5);
+  // Pair 2
+  @6tone3: spin(@baseColor, (120 - (@distance5 * 0.5)));
+  @6tone4: spin(@baseColor, (120 + (@distance5 * 0.5)));
+  // Pair 3
+  @6tone5: spin(@baseColor, (-120 + (@distance5 * 0.5)));
+  @6tone6: spin(@baseColor, (-120 - (@distance5 * 0.5)));
