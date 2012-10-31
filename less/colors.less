@@ -1,5 +1,4 @@
 @baseColor: #FD00FF;
-@placeholder: #ccc;
 
 // Analgous
   @distance1: 10; // Degrees between each analgous color
@@ -9,28 +8,23 @@
   @analgous4: spin(@baseColor, (@distance1 * -1));
   @analgous5: spin(@baseColor, (@distance1 * -2));
 
-// Clash (45°)
-  @clash1: @placeholder;// @baseColor;
-  @clash2: @placeholder;
-  @clash3: @placeholder;
+// Clash
+  @angle: 45; // Angle formed at base of isosceles triangle
+  @clash1: spin(@baseColor, (@angle * -2));
+  @clash2: @baseColor;
+  @clash3: spin(@baseColor, (@angle * 2));
   
 // Triadic
   @triad1: @baseColor;
   @triad2: spin(@baseColor, 120);
   @triad3: spin(@baseColor, -120);
-
-// Tetradic (Square)
-  @tetradSq1: @baseColor;
-  @tetradSq2: spin(@baseColor, 90);
-  @tetradSq3: spin(@baseColor, 180);
-  @tetradSq4: spin(@baseColor, -90);
   
-// Tetradic (Rectangle)
-  @distance2: 30; // Degrees between two closest colors
-  @tetradRect1: @baseColor;
-  @tetradRect2: spin(@baseColor, @distance2);
-  @tetradRect3: spin(@baseColor, 180);
-  @tetradRect4: spin(@baseColor, (180 + @distance2));
+// Tetradic
+  @distance2: 90; // Degrees between two closest colors
+  @tetrad1: @baseColor;
+  @tetrad2: spin(@baseColor, @distance2);
+  @tetrad3: spin(@baseColor, 180);
+  @tetrad4: spin(@baseColor, (180 + @distance2));
   
 // Split Complementary
   @distance3: 80; // Degrees between the two complementary colors
@@ -41,13 +35,6 @@
 // Complementary
   @complementary1: @baseColor;
   @complementary2: spin(@baseColor, 180);
-
-// Compound
-  @compound1: @placeholder;// @baseColor;
-  @compound2: @placeholder;
-  @compound3: @placeholder;
-  @compound4: @placeholder;
-  @compound5: @placeholder;
 
 // Shades
   @shade1: lighten(@baseColor, 20%);

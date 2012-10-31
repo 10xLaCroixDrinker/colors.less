@@ -7,13 +7,11 @@
 Create the following color schemes
 
 * Analgous
-* Clash (45°)
-* Triadic
-* Tetradic (Square)
+* Clash
+* Triadic (Square)
+* Tetradic
 * Split Complementary
 * Complementary
-* Compound
 * Shades
-* Four tone
 * Five tone
 * Six tone
