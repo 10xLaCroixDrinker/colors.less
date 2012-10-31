@@ -1,0 +1,23 @@
+@baseColor: #FD00FF;
+
+// Analgous color scheme
+  @analgous1: spin(@baseColor, 20);
+  @analgous2: spin(@baseColor, 10);
+  @analgous3: spin(@baseColor, -10);
+  @analgous4: spin(@baseColor, -20);
+
+// Triad color scheme
+  // @triad1: darken(desaturate(spin(@baseColor, -120), 11), 13%);
+  // @triad2: darken(desaturate(@baseColor, 11), 13%);
+  @triad1: spin(@baseColor, 120);
+  @triad2: spin(@baseColor, -120);
+
+  @complementary: spin(@baseColor, 180);
+
+.compound(@baseColor) {
+  
+}
+
+.shades(@baseColor) {
+  
+}

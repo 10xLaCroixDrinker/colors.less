@@ -1,0 +1,14 @@
+body {
+  width: 100%;
+}
+.color {
+  float: left;
+  height: 500px;
+  width: 20%;
+}
+.color.two {
+  background: #02ff00;
+}
+.color.base {
+  background: #fd00ff;
+}
