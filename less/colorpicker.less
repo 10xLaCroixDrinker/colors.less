@@ -1,39 +1,75 @@
-body { width: 100%; height: 100%; margin: 0; font-family: arial, helvetica, san-serif; font-size: 12px; background: #090909; overflow: hidden; }
-
-/* COLOR */
-
-#color .bounds { width: 200px; }
-#color .TM, #color .BM { width: 180px }
-#color .ML, #color .MR { height: 185px; }
-#color .MM { position: relative; color: #111; width: 180px; height: 185px }
-#color .TML { cursor: text; padding-top: 2px; font-size: 12px; }
-#color .TML:active { cursor: move; }
-#color .z canvas { background: url('media/op_8x8.gif'); cursor: crosshair; position: relative; border: 1px solid #1f1f1f; left: 5px; float: left; display: inline; margin-top: 10px }
-#color .z div { display: inline; }
-#color .z div div { position: absolute; left: 20px }
-#color .z div .east { position: relative; float: right; top: 14px; left: -3px; font-size: 11px; color: #bbb; display: inline; cursor: text; }
-#color .z div .west { width: 10px; position: relative; float: left; top: 14px; font-size: 12px; color: #aaa; left: 6px; letter-spacing: 0.035em; display: inline; }
-#color .z div:hover .west, #color .z div:hover .east { color: #FFF; }
-#color .z div:active .west, #color .z div:active .east { color: #FFF; font-weight: bold }
-#color .z div.cur { background: url('media/miniCurr.gif'); opacity: 0.75; width: 9px; height: 9px; display: inline; position: relative; top: 15px; cursor: crosshair; z-index: 1; float: left; border: 0; padding: 0; margin: 0 0 0 3px;  }
-#color .z div:hover .cur, #color .MM div:active .cur { opacity: 1; }
-
-
-/* GUI  */
-
-.gui { cursor: move; position: absolute; top: 0; left: 0; z-index: 2; }
-.gui br { clear: both; }
-.gui .TL { background: url('media/win_LT.png') -8px 0px; width: 8px; height: 26px; float: left; }
-.gui .TM { background: url('media/win_MT.png'); width: 75px; height: 20px; float: left; text-align: center; padding-top: 6px; color: #fff; font-size: 13px; font-variant: small-caps }
-.gui .TML { float: left; z-index: 10; position: absolute; }
-.gui .TRx { float: right; position: relative; top: 2px; left: 1px }
-.gui .TRx img { float: left; margin: 0; padding: 0 0 0 6px; height: 12px; width: 12px; position: relative; top: 1px; opacity: 0.5; cursor: pointer }
-.gui .TRx img:hover { opacity: 1; }
-.gui .TRx div { width: 1px; background: #1a1a1a; height: 13px; float: left; margin: 1px 0 0 0; opacity: 0.5; }
-.gui .TR { background: url('media/win_RT.png'); width: 8px; height: 26px; float: left; }
-.gui .ML { background: url('media/win_LM.png') -8px; float: left; width: 8px; height: 257px; }
-.gui .MM { background: url('media/win_MM.png'); float: left; width: 75px; cursor: default; }
-.gui .MR { background: url('media/win_RM.png'); float: left; width: 8px; height: 257px; }
-.gui .BL { background: url('media/win_LB.png') -8px -22px; float: left; width: 8px; height: 10px; }
-.gui .BM { background: url('media/win_MB.png') 0 -22px; float: left; width: 75px; height: 10px; }
-.gui .BR { background: url('media/win_RB.png') -16px -22px; float: left; width: 8px; height: 10px; }
+#ColorPicker {
+	border: 1px solid rgba(0,0,0,0.5);
+	border-radius: 6px;
+	background: #0d0d0d;
+	background: -webkit-gradient(linear, left top, left bottom, from(#333), color-stop(0.1, #111), to(#000000));
+	box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.35);
+	text-shadow: 1px 1px 1px #000;
+	color:#AAA;
+	cursor:default;
+	display:block;
+	font-family:'arial',helvetica,sans-serif;
+	font-size:20px;
+	padding:7px 8px 20px;
+	position:absolute;
+	top: 100px;
+	left: 700px;
+	width:229px;
+	z-index:100;
+}
+#ColorPicker br {
+	clear:both;
+	margin:0;
+	padding:0;
+}
+#ColorPicker input.hexInput:hover,
+#ColorPicker input.hexInput:focus {
+	color: #FFD000
+}
+#ColorPicker input.hexInput {
+	-webkit-transition-property: color;
+	-webkit-transition-duration: .5s;
+	background: none;
+	border: 0;
+	margin: 0;
+	font-family:courier,monospace;
+	font-size:20px;
+	position: relative;
+	top: -2px;
+	float:left;
+	color:#fff;
+	cursor: text;
+}
+#ColorPicker div.hexBox {
+	border: 1px solid rgba(255,255,255,0.5);
+	border-radius: 2px;
+	background:#FFF;
+	float:left;
+	font-size:1px;
+	height:20px;
+	margin: 0 5px 0 2px;
+	width:20px;
+	cursor: pointer;
+}
+#ColorPicker div.hexBox div {
+	width: inherit;
+	height: inherit;
+}
+#ColorPicker div.hexClose {
+	-webkit-transition-property: color, text-shadow;
+	-webkit-transition-duration: .5s;
+	position: relative;
+	top: -1px;
+	left: -1px;
+	color:#FFF;
+	cursor:pointer;
+	float:right;
+	padding: 0 5px;
+	margin:0 4px 3px;
+	user-select:none;
+	-webkit-user-select: none;
+}
+#ColorPicker div.hexClose:hover {
+	text-shadow: 0 0 20px #fff;
+	color:#FF1100;
+}
