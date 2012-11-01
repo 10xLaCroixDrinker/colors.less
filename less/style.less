@@ -2,16 +2,65 @@
 @import 'colorpicker';
 @import 'colors';
 
+nav {
+  padding: 6px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 101;
+  background: #777;
+  ul {
+    list-style: none;
+    margin: 0 auto;
+    width: 580px;
+    li {
+      float: left;
+      margin-right: 40px;
+      &:last-child {margin-right: 0;}
+      a {
+        color: #eee;
+      }
+    }
+  }
+}
+
 .wrapper {
-  margin: 0 auto;
-  width: 80%;
+  margin: 12px auto 0;
+  width: 960px;
+}
+
+/*
+h3 {
+  display: inline;
+  margin-left: 1.6%;
+  width: 30%;
+}
+*/
+
+section {
+  margin-bottom: 100px;
+  &#demo {height: 400px;}
+}
+
+#ColorPicker {
+  left: 820px;
+  top: 720px;
+}
+
+figure {
+  float: left;
+  margin: 0 1.6%;
+  width: 30%;
 }
 
 .scheme {
-  float: left;
-  height: 168px;
-  margin: 0 1.6%;
-  width: 30%;
+  border-radius: 6px;
+  height: 100px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
   .color {
     float: left;
     height: 100px;

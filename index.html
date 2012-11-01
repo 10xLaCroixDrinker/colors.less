@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <title>colors.less Demo</title>
+    <title>colors.less - Create color schemes with LESS</title>
     
     <link rel="stylesheet/less" type="text/css" href="less/style.less">
     
@@ -14,78 +14,141 @@
   
   <body>
     
+    <nav>
+      <ul>
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#docs">Documentation</a></li>
+        <li><a href="#demo">Demo</a></li>
+        <li><a href="#">Download</a></li>
+        <li><a href="https://github.com/jking90/colors.less">View on github</a></li>
+      </ul>
+    </nav>
+    
     <div class="wrapper">
-      <div class="shades scheme five">
-        <h2>Shades</h2>
-        <div class="color one"></div>
-        <div class="color two"></div>
-        <div class="color three"></div>
-        <div class="color four"></div>
-        <div class="color five"></div>
-      </div>
-  
-      <div class="analgous scheme five">
-        <h2>Analgous</h2>
-        <div class="color one"></div>
-        <div class="color two"></div>
-        <div class="color three"></div>
-        <div class="color four"></div>
-        <div class="color five"></div>
-      </div>
-  
-      <div class="complementary scheme two">
-        <h2>Complementary</h2>
-        <div class="color one"></div>
-        <div class="color two"></div>
-      </div>
       
-      <div class="split-comp scheme three">
-        <h2>Split Complementary</h2>
-        <div class="color one"></div>
-        <div class="color two"></div>
-        <div class="color three"></div>
-      </div>    
-  
-      <div class="clash scheme three">
-        <h2>Clash</h2>
-        <div class="color one"></div>
-        <div class="color two"></div>
-        <div class="color three"></div>
-      </div>
-  
-      <div class="triadic scheme three">
-        <h2>Triadic</h2>
-        <div class="color one"></div>
-        <div class="color two"></div>
-        <div class="color three"></div>
-      </div>
-  
-      <div class="tetradic scheme four">
-        <h2>Tetradic</h2>
-        <div class="color one"></div>
-        <div class="color two"></div>
-        <div class="color three"></div>
-        <div class="color four"></div>
-      </div>
+      <section id="intro">
+        <h1>colors.less</h1>
+        <h2>Create color schemes with LESS</h2>
+        <p>I like to use formulaic color schemes in my web development sometimes, but generating them with tools like <a href="https://kuler.adobe.com/">kuler</a> is not very maintainable. So I decided to write some LESS color formulas to generate some of the most common color schemes for me, and share it with you.</p>
+      </section>
       
-      <div class="five-tone scheme five">
-        <h2>Five Tone</h2>
-        <div class="color one"></div>
-        <div class="color two"></div>
-        <div class="color three"></div>
-        <div class="color four"></div>
-        <div class="color five"></div>
-      </div>
-  
-      <div class="six-tone scheme six">
-        <h2>Six Tone</h2>
-        <div class="color one"></div>
-        <div class="color two"></div>
-        <div class="color three"></div>
-        <div class="color four"></div>
-        <div class="color five"></div>
-        <div class="color six"></div>
-      </div>
-    </div>    
+      <section id="docs">
+        <h2>Documentation</h2>
+
+        <h3>Scope:</h3>
+        <p>Create the following color schemes</p>
+        <ul>
+          <li>Shades</li>
+          <li>Analgous</li>
+          <li>Complementary</li>
+          <li>Split Complementary</li>
+          <li>Clash</li>
+          <li>Triadic</li>
+          <li>Tetradic</li>
+          <li>Five tone</li>
+          <li>Six tone</li>
+        </ul>
+        
+        <h3>Usage</h3>
+        <p>Each color scheme takes two parameters, <code>@baseColor</code> and <code>@difference</code>, <code>@distance</code>, or <code>@angle</code>. Except for the complimentary scheme, which only take <code>@baseColor</code>.</p>
+        
+        <h3>Dependancies</h3>
+        <p>The only dependancy is <a href="http://lesscss.org/">LESS</a>.
+      </section>
+            
+      <section id="demo">
+        <h2>Demo</h2>
+        <figure>
+          <figcaption>Shades</figcaption>
+          <ul class="shades scheme five">
+            <li class="color one"></li>
+            <li class="color two"></li>
+            <li class="color three"></li>
+            <li class="color four"></li>
+            <li class="color five"></li>
+          </ul>
+        </figure>
+    
+        <figure>
+          <figcaption>Analgous</figcaption>
+          <ul class="analgous scheme five">
+            <li class="color one"></li>
+            <li class="color two"></li>
+            <li class="color three"></li>
+            <li class="color four"></li>
+            <li class="color five"></li>
+          </ul>
+        </figure>
+    
+        <figure>
+          <figcaption>Complementary</figcaption>
+          <ul class="complementary scheme two">
+            <li class="color one"></li>
+            <li class="color two"></li>
+          </ul>
+        </figure>
+        
+        <figure>
+          <figcaption>Split Complementary</figcaption>
+          <ul class="split-comp scheme three">
+            <li class="color one"></li>
+            <li class="color two"></li>
+            <li class="color three"></li>
+          </ul>    
+        </figure>
+        
+        <figure>
+          <figcaption>Clash</figcaption>
+          <ul class="clash scheme three">
+            <li class="color one"></li>
+            <li class="color two"></li>
+            <li class="color three"></li>
+          </ul>
+        </figure>
+        
+        <figure>
+          <figcaption>Triadic</figcaption>
+          <ul class="triadic scheme three">
+            <li class="color one"></li>
+            <li class="color two"></li>
+            <li class="color three"></li>
+          </ul>
+        </figure>
+        
+        <figure>
+          <figcaption>Tetradic</figcaption>
+          <ul class="tetradic scheme four">
+            <li class="color one"></li>
+            <li class="color two"></li>
+            <li class="color three"></li>
+            <li class="color four"></li>
+          </ul>
+        </figure>
+        
+        <figure>
+          <figcaption>Five Tone</figcaption>
+          <ul class="five-tone scheme five">
+            <li class="color one"></li>
+            <li class="color two"></li>
+            <li class="color three"></li>
+            <li class="color four"></li>
+            <li class="color five"></li>
+          </ul>
+        </figure>
+    
+        <figure>
+          <figcaption>Six Tone</figcaption>
+          <ul class="six-tone scheme six">
+            <li class="color one"></li>
+            <li class="color two"></li>
+            <li class="color three"></li>
+            <li class="color four"></li>
+            <li class="color five"></li>
+            <li class="color six"></li>
+          </ul>
+        </figure>
+      </section><!-- end .demo -->
+      
+    </div><!-- end .wrapper -->    
   </body>
 </html>

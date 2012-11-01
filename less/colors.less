@@ -1,12 +1,12 @@
 @baseColor: #FD00FF;
-//@baseColor: ~`baseColor`;
 
 // Shades
-  @shade1: lighten(@baseColor, 20%);
-  @shade2: lighten(@baseColor, 10%);
+  @difference: 10%; // Difference (in perecent) between each shade
+  @shade1: lighten(@baseColor, (@difference * 2));
+  @shade2: lighten(@baseColor, @difference);
   @shade3: @baseColor;
-  @shade4: darken(@baseColor, 10%);
-  @shade5: darken(@baseColor, 20%);
+  @shade4: darken(@baseColor, @difference);
+  @shade5: darken(@baseColor, (@difference * 2));
     
 // Analgous
   @distance1: 10; // Degrees between each analgous color
@@ -21,10 +21,10 @@
   @complementary2: spin(@baseColor, 180);
 
 // Split Complementary
-  @distance3: 80; // Degrees between the two complementary colors
-  @splitComp1: spin(@baseColor, ((360 - @distance3) / 2));
+  @distance2: 80; // Degrees between the two complementary colors
+  @splitComp1: spin(@baseColor, ((360 - @distance2) / 2));
   @splitComp2: @baseColor;
-  @splitComp3: spin(@baseColor, (((360 - @distance3) / 2) * -1));
+  @splitComp3: spin(@baseColor, (((360 - @distance2) / 2) * -1));
 
 // Clash
   @angle: 45; // Angle formed at base of isosceles triangle
@@ -33,33 +33,34 @@
   @clash3: spin(@baseColor, (@angle * 2));
   
 // Triadic
+  @distance3: 120; // Degrees between the two new colors
   @triad1: @baseColor;
-  @triad2: spin(@baseColor, 120);
-  @triad3: spin(@baseColor, -120);
+  @triad2: spin(@baseColor, (180 - (@distance3 * 0.5)));
+  @triad3: spin(@baseColor, (180 + (@distance3 * 0.5)));
   
 // Tetradic
-  @distance2: 90; // Degrees between two closest colors
+  @distance4: 90; // Degrees between two closest colors
   @tetrad1: @baseColor;
-  @tetrad2: spin(@baseColor, @distance2);
+  @tetrad2: spin(@baseColor, @distance4);
   @tetrad3: spin(@baseColor, 180);
-  @tetrad4: spin(@baseColor, (180 + @distance2));
+  @tetrad4: spin(@baseColor, (180 + @distance4));
   
 // Five tone
-  @distance4: 30; // Degrees between the 4 analgous colors
+  @distance5: 30; // Degrees between the 4 analgous colors
   @5tone1: @baseColor;
-  @5tone2: spin(@baseColor, (180 - (@distance4 * 1.5)));
-  @5tone3: spin(@baseColor, (180 - (@distance4 * 0.5)));
-  @5tone4: spin(@baseColor, (180 + (@distance4 * 0.5)));
-  @5tone5: spin(@baseColor, (180 + (@distance4 * 1.5)));
+  @5tone2: spin(@baseColor, (180 - (@distance5 * 1.5)));
+  @5tone3: spin(@baseColor, (180 - (@distance5 * 0.5)));
+  @5tone4: spin(@baseColor, (180 + (@distance5 * 0.5)));
+  @5tone5: spin(@baseColor, (180 + (@distance5 * 1.5)));
   
 // Six tone
-  @distance5: 20; // Distance between the colors of each analgous pair
+  @distance6: 20; // Distance between the colors of each analgous pair
   // Pair 1
   @6tone1: @baseColor;
-  @6tone2: spin(@baseColor, @distance5);
+  @6tone2: spin(@baseColor, @distance6);
   // Pair 2
-  @6tone3: spin(@baseColor, (120 - (@distance5 * 0.5)));
-  @6tone4: spin(@baseColor, (120 + (@distance5 * 0.5)));
+  @6tone3: spin(@baseColor, (120 - (@distance6 * 0.5)));
+  @6tone4: spin(@baseColor, (120 + (@distance6 * 0.5)));
   // Pair 3
-  @6tone5: spin(@baseColor, (-120 + (@distance5 * 0.5)));
-  @6tone6: spin(@baseColor, (-120 - (@distance5 * 0.5)));
+  @6tone5: spin(@baseColor, (-120 + (@distance6 * 0.5)));
+  @6tone6: spin(@baseColor, (-120 - (@distance6 * 0.5)));
