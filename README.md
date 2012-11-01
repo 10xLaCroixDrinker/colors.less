@@ -33,5 +33,8 @@ only takes `@baseColor`.
 
 The only dependancy is [LESS][].
 
+### [Demo][]
+
   [kuler]: https://kuler.adobe.com/
   [LESS]: http://lesscss.org/
+  [Demo]: http://jimmyking.me/colors.less/#demo
