@@ -11,6 +11,6 @@ window.onload = function() {
       });
 		}
 	});
-	picker.element.style.top = swatch.offsetTop + "px";
-	picker.element.style.left = (swatch.offsetLeft - 285) + "px";
+//	picker.element.style.top = swatch.offsetTop + "px";
+//	picker.element.style.left = (swatch.offsetLeft - 285) + "px";
 };
