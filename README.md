@@ -5,7 +5,7 @@
 I like to use formulaic color schemes in my web development sometimes,
 but generating them with tools like [kuler][] is not very maintainable.
 So I decided to write some LESS color formulas to generate some of the
-most common color schemes for me, and share it with you.
+most common color schemes, and share it with you.
 
 ##Documentation
 
@@ -27,7 +27,7 @@ Create the following color schemes
 
 Each color scheme takes two parameters, `@baseColor` and `@difference`,
 `@distance`, or `@angle`. Except for the complimentary scheme, which
-only take `@baseColor`.
+only takes `@baseColor`.
 
 ### Dependancies
 
