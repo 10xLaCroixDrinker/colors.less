@@ -1,13 +1,13 @@
-#colors.less
+# colors.less
 
-##Create color schemes with LESS
+## Create color schemes with LESS
 
 I like to use formulaic color schemes in my web development sometimes,
 but generating them with tools like [kuler][] is not very maintainable.
 So I decided to write some LESS color formulas to generate some of the
 most common color schemes, and share it with you.
 
-##Documentation
+## Documentation
 
 ### Scope:
 
@@ -37,4 +37,4 @@ The only dependancy is [LESS][].
 
   [kuler]: https://kuler.adobe.com/
   [LESS]: http://lesscss.org/
-  [Demo]: http://jimmyking.me/colors.less/#demo
+  [Demo]: http://projects.jimmyking.me/colors.less/#demo
