@@ -37,4 +37,4 @@ The only dependancy is [LESS][].
 
   [kuler]: https://kuler.adobe.com/
   [LESS]: http://lesscss.org/
-  [Demo]: http://projects.jamieking.me/colors.less/#demo
+  [Demo]: https://jamieking.dev/colors.less/#demo
